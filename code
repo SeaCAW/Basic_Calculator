@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+#include <iomanip>
+
+using namespace std;
+int main() {
+    int a;
+    int b;
+    string m;
+
+    cout << "Pick 2 numbers: ";
+    cin >> a >> b;
+
+    cout <<"Pick any operator: ";
+    cin >>m;
+
+    if ("+" == m)
+        cout <<a<<"+"<<b<<"=" << a+b;
+    else if ("-" == m)
+        cout <<a<<"-"<<b<<"="<< a-b;
+    else if ("/" == m )
+        cout<<a<<"/"<<b<<"="<<a/b;
+    else
+        cout<<a<<"*"<<b<<"="<<a*b;
+
+    return 0;
+}
